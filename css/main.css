@@ -1,0 +1,84 @@
+/* =========================
+     Base element styles
+============================ */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+    margin: 0;
+}
+
+ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+     Base Layout Styles
+============================ */
+
+/*---- Navigation ----*/
+.name {
+    font-size: 1.35em;
+    margin: 0;
+}
+.name a {
+    color: #093a58;
+}
+.main-nav {
+    margin-top: 5px;
+}
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+.main-nav a{
+    font-size: .95em;
+    color: #3acec2;
+    text-transform: uppercase;
+}
+.main-nav a:hover {
+    color: #093a58;
+}
+
+/*---- Navigation ----*/
+
+
+
+
+/* =========================
+     Media Queries
+============================ */
+
+@media (min-width: 769px) {
+        .main-header,
+        .main-nav {
+            display: flex;
+        }
+
+        .main-header {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+@media   (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #535050;
+    }
+}
