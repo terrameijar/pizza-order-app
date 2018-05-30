@@ -14,6 +14,40 @@ body {
     margin: 0;
 }
 
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+
+}
+
+form h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255, 0.1) inset;
+    margin-bottom: 10px;
+
+}
+
+button:hover {
+    cursor: ;
+}
+
 ul {
     margin:0;
     padding: 0;
@@ -54,8 +88,33 @@ a {
     color: #093a58;
 }
 
-/*---- Navigation ----*/
+/*---- Layout Containers ----*/
 
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.banner,
+.main-footer{
+    text-align: center;
+}
+
+.banner {
+    color: orange;
+    background: #444;
+    padding: 3.2em 0;
+    margin-bottom: 48px;
+}
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.main-footer {
+    background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+}
 
 
 
@@ -64,8 +123,14 @@ a {
 ============================ */
 
 @media (min-width: 769px) {
+
+        .wrap {
+            /*Make the footer stick to the bottom of page*/
+            min-height: calc(100vh - 98px );
+        }
         .main-header,
-        .main-nav {
+        .main-nav,
+        .row {
             display: flex;
         }
 
@@ -73,12 +138,26 @@ a {
             flex-direction: column;
             align-items: center;
         }
+        .row {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .col {
+            flex: 1;
+        }
 }
 
 @media   (min-width: 1025px) {
     .main-header {
         flex-direction: row;
         justify-content: space-between;
-        background-color: #535050;
+        background-color: #ece9f0;
+    }
+    .row {
+        width: 80%;
+        max-width: 1150px;
+    }
+    .primary {
+        flex: 2;
     }
 }
