@@ -78,14 +78,16 @@ a {
     text-align: center;
     display: block;
     padding: 10px 15px;
+    color: white;
 }
 .main-nav a{
     font-size: .95em;
-    color: #3acec2;
+    /*color: #3acec2;*/
+    color: white;
     text-transform: uppercase;
 }
 .main-nav a:hover {
-    color: #093a58;
+    color: red;
 }
 
 /*---- Layout Containers ----*/
@@ -103,8 +105,12 @@ a {
 .banner {
     color: orange;
     background: #444;
+    /*background-image: url('http://lorempixel.com/1038/564/food/');*/
+    background-image: url('../img/pizza-banner.jpg');
+    background-position: center;
     padding: 3.2em 0;
     margin-bottom: 48px;
+    height: 60%;
 }
 .col {
     padding-right: 1em;
@@ -114,6 +120,33 @@ a {
     background: #d9e4ea;
     padding: 2em 0;
     margin-top: 30px;
+}
+
+.item-list {
+    border: 1px solid red;
+}
+
+.menu,
+.item-list,
+.item-details {
+    display: flex;
+}
+
+.menu {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.item-list * {
+    border-right: 1px solid black;
+}
+
+.item-image img {
+    width: 131px;
+    height:125px;
+
 }
 
 
@@ -151,7 +184,7 @@ a {
     .main-header {
         flex-direction: row;
         justify-content: space-between;
-        background-color: #ece9f0;
+        background-color: #343434;
     }
     .row {
         width: 80%;
