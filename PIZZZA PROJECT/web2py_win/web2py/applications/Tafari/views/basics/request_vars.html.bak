@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+<h2>Enter Two decimal numbers and get total!</h2>
+<form method = 'post'>
+    <input type = 'text' name = 'num1' />
+    <input type = 'text' name = 'num2' />
+    <input type = 'submit' value = 'Add' />
+</form>
+</hr>
+<h3>
+   The total of {{=num1}} and {{=num2}} is  {{=total}}
+</h3>

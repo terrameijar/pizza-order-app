@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+# try something like
+def index(): return dict(message="hello from subscribe.py")
+
+def make_pay():
+    form = SQLFORM(db.payments).process()
+    
+    if form.accepted:
+        session.flash = "Accepted"
+        
+    elif form.errors:
+        response.flash = "Please Check if u filled out every field!"
+    else:
+        response.flash = "Please fill out everything in the form !"
+        
+    return locals()
+
+def next():
+    msg = "What woul you like to do next?"
+    return locals()
+
+def paid():
+    #this line selects rows in db by id in a descending order
+    rows = db(db.payments).select(orderby=db.payments.id)
+    return locals()

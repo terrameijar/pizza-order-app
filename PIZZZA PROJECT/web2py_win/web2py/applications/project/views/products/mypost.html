@@ -1,0 +1,26 @@
+{{extend 'layout.html'}}
+<h1>Manage Posts</h1>
+<hr/>
+{{ for x in rows: }}
+<div class='row'>
+    <img class='col col-lg-4 col-md-6 col-sm-6 col-xs-12' src="{{=URL('download',args=x.image)}}" alt='image' />
+    <div class='col col-lg-8 col-md-6 col-sm-6 col-xs-12'>
+         <p class='lead'>
+            <b>{{=x.product_name}}</b> 
+        </p>
+        <p>
+            <b>${{=x.current_price}}</b>
+        </p>
+        <p>
+            <a href='update/{{=x.id}}'>Update</a>
+        </p>
+        <p>
+            {{=x.description}}
+        </p>
+        <p>
+            {{=x.product_availability}}
+        </p>
+    </div>
+</div>
+<hr/>
+{{pass}}

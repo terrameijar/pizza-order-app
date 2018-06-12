@@ -1,0 +1,17 @@
+{{extend 'layout.html'}}
+<h1>Shopping Cart</h1>
+<p>
+    Items in Cart
+</p>
+<table class='table table-striped table-hover'>
+    {{for x in rows:}}
+    <tr>
+        <td>{{x.qty}}</td>
+        <td>{{=prodDict[x.id]}}</td>
+        <td><a href='#delete'>Delete</a></td>        #delete function will be made in future
+    </tr>
+    {{pass}}
+</table>
+<br/>
+<a href='view'>Continue Ordering</a>
+<button>Check Out</button>

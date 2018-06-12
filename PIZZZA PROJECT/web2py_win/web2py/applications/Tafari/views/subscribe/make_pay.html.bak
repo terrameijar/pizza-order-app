@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+<h1>MAKE PAYMENT</h1>
+{{=form}}
+
+<a href={{=rows}}>PREV PAYMENTS</a>

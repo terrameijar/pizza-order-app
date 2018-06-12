@@ -1,0 +1,2 @@
+{{extend 'layout.html'}}
+<h1>{{=sub_name}} has payment success</h1>
