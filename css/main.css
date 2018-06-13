@@ -178,7 +178,6 @@ a {
 .item-image{
     padding: 20px;
     padding-bottom: 0px;
-
     border: 1px solid pink;
     margin-bottom:0;
 }
@@ -208,7 +207,6 @@ a {
 
 .item-quantity h4{
     margin-bottom:0px;
-
 }
 
 .item-quantity input {
@@ -219,7 +217,6 @@ a {
 
 .order-btn {
     margin-top: 10px;
-
 }
 
 
@@ -240,7 +237,6 @@ a {
 
     .name a,
     .main-nav a {
-
         color: white;
     }
 
@@ -259,7 +255,7 @@ a {
         flex-direction: row;
     }
 
-            .menu h1 {
+    .menu h1 {
         text-align: center;
     }
 
@@ -273,11 +269,6 @@ a {
     .item-image img {
         width: 200px;
         height:200px;
-/*         padding: 10px; */
-/*         border: 1px solid #ccc; */
-        /*position: relative;
-        top: 29px;
-        left:0;*/
     }
 
 
@@ -308,8 +299,6 @@ a {
 
     .item-quantity{
         border: solid 1px red;
-
-
     }
 
     .wrap {
