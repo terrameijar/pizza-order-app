@@ -1,26 +1,45 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+<head>
+    <title>Food Ordering App</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="css/styles.css"    /> -->
+    <link rel="stylesheet" href="css/main.css"    />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="simpleCart.min.js"></script>
+    <script>
+      simpleCart({
+        checkout: {
+          type: "PayPal",
+          email: "you@yours.com"
+        }
+  });
+</script>
+</head>
+<body>
 
-        <h1>Menu</h1>
+    <header class="main-header">
+        <h1 class="name"><a href="index.html">Food Ordering App</a></h1>
+        <ul class="main-nav">
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header> <!--/ .main-header -->
+
+
 
         <div class="menu">
-            <div class="item-list">
+            <h1>Pizza Menu</h1>
+            <div class="item-list simpleCart_shelfItem">
                 <div class="item-image">
                     <img src="img/pizza-2_small.jpg" alt="Pizza image"/>
 
                 </div>
                 <div class="item-details">
                     <div class="item-description">
-                        <h4>01. Pizza Flavour</h4>
+                        <h4 class="item_name">01. Pizza Flavour</h4>
                         <p>
                             Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.
                              Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie.
@@ -29,18 +48,31 @@
 
                     </div>
                     <div class="item-price">
-                        <h4>$ 10.00</h4>
+                        <h4 class="item_price">Price</h4>
+                        <span class="price">$ 10.00</span>
 
                     </div>
                     <div class="item-option">
                         <h4>Options</h4>
-                        <label>Toppings</label>
+                        <div class="option-select">
 
+                            <label><strong>Size</strong></label> <br />
+                            <input type="radio" id="size_small" value="small" name="size" />
+                            <label for="size_small">Small</label><br />
+
+                            <input type="radio" id="size_medium" value="medium" name="size" />
+                            <label for="size_medium">Medium</label><br />
+
+                            <input type="radio" id="size_large" value="large" name="size" />
+                            <label for="size_large">Large</label><br />
+
+                        </div>
+<!--
                         <input type="checkbox" id="cheese" value="" name="" /><label for="cheese">Extra cheese</label> <br />
                         <input type="checkbox" id="" value="" name="" /><label>Deep pan</label> <br />
                         <input type="checkbox" id="" value="" name="" /><label>Extra sauce</label><br />
                         <input type="radio" id="" value="" name="" /><br />
-                        <input type="radio" id="" value="" name="" /><br />
+                        <input type="radio" id="" value="" name="" /><br /> -->
 
 
 
@@ -50,6 +82,7 @@
                             <input type="text" placeholder="1" />
                     </div>
                 </div>
+                
             </div> <!-- /.item-list -->
 
             <div class="item-list">
@@ -68,18 +101,25 @@
 
                     </div>
                     <div class="item-price">
-                        <h4>$ 10.00</h4>
+                        <h4>Price</h4>
+                        <span class="price">$ 10.00</span>
 
                     </div>
                     <div class="item-option">
                         <h4>Options</h4>
-                        <label>Toppings</label>
-                        <input type="checkbox" />
-                        <input type="checkbox" />
-                        <input type="checkbox" />
-                        <input type="radio" id="" value="" name="" />
-                        <input type="radio" id="" value="" name="" />
+                        <div class="option-select">
 
+                            <label><strong>Size</strong></label> <br />
+                            <input type="radio" id="size_small" value="small" name="size" />
+                            <label for="size_small">Small</label><br />
+
+                            <input type="radio" id="size_medium" value="medium" name="size" />
+                            <label for="size_medium">Medium</label><br />
+
+                            <input type="radio" id="size_large" value="large" name="size" />
+                            <label for="size_large">Large</label><br />
+
+                        </div>
 
 
                     </div>
@@ -106,19 +146,23 @@
 
                     </div>
                     <div class="item-price">
-                        <h4>$ 10.00</h4>
-
+                        <h4>Price</h4>
+                        <span class="price">$ 10.00</span>
                     </div>
                     <div class="item-option">
-                        <h4>Options</h4>
-                        <input type="checkbox" />
-                        <input type="checkbox" />
-                        <input type="checkbox" />
-                        <input type="radio" id="" value="" name=""/>
-                        <input type="radio" id="" value="" name=""/>
+                        <div class="option-select">
 
+                            <label><strong>Size</strong></label> <br />
+                            <input type="radio" id="size_small" value="small" name="size" />
+                            <label for="size_small">Small</label><br />
 
+                            <input type="radio" id="size_medium" value="medium" name="size" />
+                            <label for="size_medium">Medium</label><br />
 
+                            <input type="radio" id="size_large" value="large" name="size" />
+                            <label for="size_large">Large</label><br />
+
+                        </div>
                     </div>
                     <div class="item-quantity">
                         <h4>Quantity</h4>
@@ -128,7 +172,7 @@
             </div> <!-- /.item-list -->
 
 
-<button type="submit">Order</button>
+<button class="order-btn" type="submit">Place Order</button>
         </div> <!--/.menu-->
 
 
@@ -190,6 +234,10 @@
         <button type="submit">Sign Up</button>
 
       </form> -->
+
+          <footer class="main-footer">
+              <span>&copy; 2018 Food Ordering Application.</span>
+          </footer>
 
 
     </body>
