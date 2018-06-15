@@ -16,21 +16,23 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </header> <!--/ .main-header -->
-            <div class="wrap">
+        <h1>Update</h1>
 
-                <form action="" method="post">
-                    <h1>Sign In</h1>
-                    <fieldset>
-                        <label for="name">Username:</label>
-                        <input type="text" id="name" name="user_name" />
+{{ if isValid==True: }}
+{{=form }}
+{{pass}}
 
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="user_password" />
-                    </fieldset>
-                    <button type="submit">Sign In</button>
-                </form>
+{{ if isValid==False: }}
+<p>
+    Wavakuda kuitei?? tsvaga manager wako akuitire!!!!!!
+</p>
+{{pass}}
 
-        </div> <!-- /.row -->
+<br/>
+<hr/>
+<a href='../post'>Add Product</a>
+
+<!-- this space needs some love -->
         <footer class="main-footer">
             <span>&copy; 2018 Food Ordering Application.</span>
         </footer>

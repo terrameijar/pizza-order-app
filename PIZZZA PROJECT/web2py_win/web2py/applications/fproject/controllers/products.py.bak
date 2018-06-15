@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import time
 #this is where you view all products in store
 @auth.requires_login()
 def view():
@@ -56,7 +56,24 @@ def buy():
     rows = db(db.sale.customer == session.auth.user.id).select(orderby=~db.sale.id)
     return locals()
 
+def delete():
+    pizzaRow = db(db.sale.productId==request.args(0)).delete()
+    session.flash = 'item has been removed from cart'
+    redirect(URL('view'))
+    return locals()
+
+def pay():
+    sales = pizzaRow = db(db.sale).select()
+    for x in sales:
+        my_oz= db((x.created_by==session.auth.user.id) & (sale.is_active=True)).select()
+        
 
 #this downloads the product for view
 def download():
     return response.download(request, db)
+
+# ---- Manage Orders -----
+@auth.requires_membership('manager') # can only be accessed by members of manager groupd
+def manage():
+    grid = SQLFORM.smartgrid(db.products, linked_tables=['products'])
+    return dict(grid=grid)

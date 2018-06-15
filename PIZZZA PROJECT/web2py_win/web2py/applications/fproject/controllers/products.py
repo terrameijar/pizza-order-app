@@ -42,7 +42,6 @@ def update():
 @auth.requires_login()
 def buy():
     myDict={}
-    form =SQLFORM.factory(Field('transaction_id'))
     pizzaRow = db(db.products).select()
     for x in pizzaRow:
         myDict[x.id]= x.product_name
@@ -51,17 +50,25 @@ def buy():
     customer = session.auth.user.id
     db.sale.insert(customer=customer,
                           productId = productId,
-                          quantity = qty,
-                          transaction_id=form.vars.transaction_id)
+                          quantity = qty
+                          )
     rows = db(db.sale.customer == session.auth.user.id).select(orderby=~db.sale.id)
     return locals()
 
 def delete():
     pizzaRow = db(db.sale.productId==request.args(0)).delete()
     session.flash = 'item has been removed from cart'
-    time.sleep(0)
     redirect(URL('view'))
     return locals()
+'''
+def pay():
+    form =SQLFORM.factory(Field('transaction_id'),Field('address','string'))
+    sales = pizzaRow = db(db.sale).select()
+    for x in sales:
+        my_oz= db((x.created_by=session.auth.user.id) & (sale.is_active=True)).select()
+    
+    
+'''       
 
 #this downloads the product for view
 def download():

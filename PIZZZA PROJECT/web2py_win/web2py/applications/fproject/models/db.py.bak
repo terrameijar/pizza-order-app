@@ -168,3 +168,10 @@ db.define_table('sale',
     Field('status', 'boolean', default=False),
     auth.signature
     )
+
+db.define_table('order',
+    Field('order_list','text', notnull=True),
+    Field('address', 'text', notnull=True),
+    Field('price', 'float',notnull=True),
+    Field('transaction_id', 'string',notnull=True),
+    )

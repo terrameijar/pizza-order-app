@@ -166,6 +166,9 @@ db.define_table('sale',
     Field('productId', db.products),
     Field('quantity', 'integer'),
     Field('status', 'boolean', default=False),
-    Field('transaction_id', 'string'),
     auth.signature
+    )
+
+db.define_table('showcase',
+    Field('image','upload',notnull=True)
     )

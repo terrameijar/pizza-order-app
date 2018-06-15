@@ -1,4 +1,18 @@
-17:10 11/06/18 - last edited at work
 
-run web2py.exe on windows to run web server
-then select admin on the welcome web page and you will have access to the application
+
+
+SO FOR YOU TO SEE THIS APP YOU HAVE TO OPEN THE dir writen below 
+
+open web2py folder then go to applications>
+our pizza app is named fproject
+in the fprojects that is where all the folders are ....
+
+WITH WEB2PY it uses MVC (model view code method)
+
+in the model is where yu will find my tables
+in view that is where the html files are
+and controller is where my products.py is
+
+products.py is where all the magic/logic happens
+
+CHeers!
