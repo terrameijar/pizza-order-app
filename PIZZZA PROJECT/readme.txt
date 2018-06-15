@@ -3,6 +3,8 @@
 
 SO FOR YOU TO SEE THIS APP YOU HAVE TO OPEN THE dir writen below 
 
+>>+ pizza-order-app/PIZZZA PROJECT/web2py_win/web2py/applications/fproject/ <<<<
+
 open web2py folder then go to applications>
 our pizza app is named fproject
 in the fprojects that is where all the folders are ....
