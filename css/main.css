@@ -16,6 +16,13 @@ body {
     margin: 0;
 }
 
+.page_container{
+    background-color: rgba(205,155,29,.6);
+
+}
+
+
+
 form {
     max-width: 300px;
     margin: 10px auto;
@@ -43,6 +50,7 @@ button {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255, 0.1) inset;
     margin-bottom: 10px;
+    cursor: pointer;
 
 }
 
@@ -140,7 +148,7 @@ a {
 ############# Order Page #############
 #####################################*/
 .item-list {
-    border: 1px solid #ccc;
+    border: 1px solid #3a3a3a;
     /*margin-bottom: 10px;*/
 }
 
@@ -178,7 +186,7 @@ a {
 .item-image{
     padding: 20px;
     padding-bottom: 0px;
-    border: 1px solid pink;
+    border: 1px solid #ccc;
     margin-bottom:0;
 }
 
@@ -229,6 +237,16 @@ a {
 
 @media (min-width: 769px) {
 
+    .page_container {
+
+        background-origin: content-box;
+        background: linear-gradient(rgba(205,155,29,.6), rgba(205,155,29,.6)), url('../img/table-map.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 15px;
+
+    }
+
     .main-header {
         max-width: 100%;
         margin:0;
@@ -253,13 +271,13 @@ a {
     .item-details,
     .item-list{
         flex-direction: row;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
     }
 
     .menu h1 {
         text-align: center;
     }
-
-
 
     .item-list {
         padding: 10px;
@@ -280,7 +298,7 @@ a {
     .item-price {
         /*flex-grow: 1;*/
         width: 150px;
-        border: solid 1px pink;
+        border: 1px solid #ccc;
     }
 
     .price {
@@ -290,6 +308,7 @@ a {
 
     .item-option{
         min-width: 200px;
+        border-right: 1px solid #ccc;
     }
 
     .option-select{
@@ -298,7 +317,7 @@ a {
     }
 
     .item-quantity{
-        border: solid 1px red;
+        border-right: 1px solid #ccc;
     }
 
     .wrap {
@@ -330,7 +349,7 @@ a {
     }
 
     .item-description{
-        border: solid 1px red;
+        /* border: 1px solid #ccc; */
         width: 70%;
     }
 

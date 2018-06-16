@@ -3,19 +3,20 @@
     <title>Pizza Order App</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"    /> -->
-    <link rel="stylesheet" href="css/main.css"    />
-    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <script src="simpleCart.min.js"></script>
-    <script>
-      simpleCart({
-        checkout: {
-          type: "PayPal",
-          email: "you@yours.com"
-        }
-  });
-</script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+    <!-- <script type="text/javascript" src="jquery-3.3.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- <script type="text/javascript" src="jquery-3.3.1.min.js"></script> -->
+
+
+
 </head>
 <body>
+    <div class="page_container">
+
+
 
     <header class="main-header">
         <h1 class="name"><a href="index.html">Pizza Order App</a></h1>
@@ -30,6 +31,7 @@
 
 
 
+
         <div class="menu">
             <h1>Pizza Menu</h1>
             <div class="item-list simpleCart_shelfItem">
@@ -39,11 +41,11 @@
                 </div>
                 <div class="item-details">
                     <div class="item-description">
-                        <h4 class="item_name">01. Pizza Flavour</h4>
+                        <h4 class="item_name">Pizza Flavour</h4>
                         <p>
-                            Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.
-                             Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie.
-                             Pastry chocolate pastry jelly croissant.
+                             Gumbo beet ipsum dolor sit greens corn soko endive gumbo gourd.
+                             Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+                             Dandelion cucumber earthnut pea peanut soko zucchini.
                         </p>
 
                     </div>
@@ -67,19 +69,14 @@
                             <label for="size_large">Large</label><br />
 
                         </div>
-<!--
-                        <input type="checkbox" id="cheese" value="" name="" /><label for="cheese">Extra cheese</label> <br />
-                        <input type="checkbox" id="" value="" name="" /><label>Deep pan</label> <br />
-                        <input type="checkbox" id="" value="" name="" /><label>Extra sauce</label><br />
-                        <input type="radio" id="" value="" name="" /><br />
-                        <input type="radio" id="" value="" name="" /><br /> -->
+
 
 
 
                     </div>
                     <div class="item-quantity">
                         <h4>Quantity</h4>
-                            <input type="text" placeholder="1" />
+                            <input type="text" placeholder="0" />
                     </div>
                 </div>
 
@@ -87,22 +84,23 @@
 
             <div class="item-list">
                 <div class="item-image">
-                    <img src="img/pizza-2_small.jpg" alt="Pizza image"/>
+                    <!-- <img src="img/pizza-2_small.jpg" alt="Pizza image"/> -->
+                    <img src="img/pizza3.jpg" alt="Pizza image"/>
 
                 </div>
                 <div class="item-details">
                     <div class="item-description">
-                        <h4>02. Pizza Flavour</h4>
+                        <h4>Pizza Flavour</h4>
                         <p>
-                            Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.
-                             Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie.
-                             Pastry chocolate pastry jelly croissant.
+                             Celery quandong swiss chard chicory earthnut pea potato.
+                             Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                             Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
                         </p>
 
                     </div>
                     <div class="item-price">
                         <h4>Price</h4>
-                        <span class="price">$ 10.00</span>
+                        <span class="price">$ 8.00</span>
 
                     </div>
                     <div class="item-option">
@@ -125,23 +123,68 @@
                     </div>
                     <div class="item-quantity">
                         <h4>Quantity</h4>
-                            <input type="text" placeholder="1" />
+                            <input type="text" placeholder="0" />
                     </div>
                 </div>
             </div> <!-- /.item-list -->
 
             <div class="item-list">
                 <div class="item-image">
-                    <img src="img/pizza-2_small.jpg" alt="Pizza image"/>
+                    <!-- <img src="img/pizza-2_small.jpg" alt="Pizza image"/> -->
+                    <img src="img/pizza-4.jpg" alt="Pizza image"/>
 
                 </div>
                 <div class="item-details">
                     <div class="item-description">
-                        <h4>03. Pizza Flavour</h4>
+                        <h4>Mexican Fiesta</h4>
                         <p>
                             Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.
                              Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie.
                              Pastry chocolate pastry jelly croissant.
+                        </p>
+
+                    </div>
+                    <div class="item-price">
+                        <h4>Price</h4>
+                        <span class="price">$ 5.00</span>
+                    </div>
+                    <div class="item-option">
+                        <div class="option-select">
+
+                            <label><strong>Size</strong></label> <br />
+                            <input type="radio" id="size_small" value="small" name="size" />
+                            <label for="size_small">Small</label><br />
+
+                            <input type="radio" id="size_medium" value="medium" name="size" />
+                            <label for="size_medium">Medium</label><br />
+
+                            <input type="radio" id="size_large" value="large" name="size" />
+                            <label for="size_large">Large</label><br />
+
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <h4>Quantity</h4>
+                            <input type="text" placeholder="0" />
+                    </div>
+                </div>
+
+
+            </div> <!-- /.item-list -->
+
+            <div class="item-list">
+                <div class="item-image">
+                    <!-- <img src="img/pizza-2_small.jpg" alt="Pizza image"/> -->
+                    <img src="img/american.jpg" alt="Pizza image"/>
+
+                </div>
+                <div class="item-details">
+                    <div class="item-description">
+                        <h4>American</h4>
+                        <p>
+                             Spicy jalapeno dolor sit bacon ipsum dolor amet sirloin ham hock flank drumstick cupim.
+                             Jowl cupim prosciutto flank tenderloin, venison turkey filet mignon brisket biltong alcatra.
+                             Cow venison strip steak landjaeger flank porchetta drumstick ham jerky turducken bresaola alcatra short ribs doner pig
                         </p>
 
                     </div>
@@ -169,76 +212,57 @@
                             <input type="text" placeholder="1" />
                     </div>
                 </div>
+
+
             </div> <!-- /.item-list -->
 
-
-<button class="order-btn" type="submit">Place Order</button>
+<!-- Button trigger modal -->
+<button class="order-btn" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+    Place Order
+</button>
         </div> <!--/.menu-->
 
+        <!-- ###### Modal #### -->
 
-      <!-- <form action="index.html" method="post">
-        <fieldset>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">Order Details</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           ...
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 
-          <legend><span class="number">1</span> Your basic info</legend>
+         </div>
+        </div>
+        </div>
+        </div>
 
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
 
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
 
-          <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
 
-        </fieldset>
 
-        <fieldset>
 
-          <legend><span class="number">2</span> Your profile</legend>
+  </div> <!--/.container -->
 
-          <label for="bio">Biography:</label>
-          <textarea id="bio" name="user_bio"></textarea>
 
-          <label for="job">Job role:</label>
-          <select id="job" name="user_job">
-            <optgroup label="Web">
-              <option value="frontend_developer">Front-End Developer</option>
-              <option value="php_developer">PHP Developer</option>
-              <option value="python_developer">Python Developer</option>
-              <option value="rails_developer">Rails Developer</option>
-              <option value="web_designer">Web Designer</option>
-              <option value="wordpress_developer">WordPress Developer</option>
-            </optgroup>
-            <optgroup label="Mobile">
-              <option value="android_developer">Android Developer</option>
-              <option value="ios_developer">iOS Developer</option>
-              <option value="mobile_designer">Mobile Designer</option>
-            </optgroup>
-            <optgroup label="Business">
-              <option value="business_owner">Business Owner</option>
-              <option value="freelancer">Freelancer</option>
-            </optgroup>
-          </select>
 
-          <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-
-        </fieldset>
-
-        <button type="submit">Sign Up</button>
-
-      </form> -->
 
           <footer class="main-footer">
               <span>&copy; 2018 Pizza Order Application.</span>
           </footer>
 
-
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
 </html>
